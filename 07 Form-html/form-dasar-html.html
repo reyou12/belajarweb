@@ -9,8 +9,20 @@
     <main>
       <h2>Form dasar html</h2>
       <form method=""post">
-        label
-      
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" required /> <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required /> <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required /> <br>
+        <label for="angka">angka</label>
+        <input type="number" name="angka" id="angka" max="1000" min="0"> <br>
+        <label for="warna">warna</label>
+        <input type="color" name="warna" id="warna"> <br>
+        <label for="tanggal lahir">tanggal lahir</label>
+        <input type="date" name="tanggal lahir" id="tanggal lahir"> <br>
+        <button type="submit">kirim</button>
+        <button type="reset">reset</button>
       </form>
     </main>
   </body>
