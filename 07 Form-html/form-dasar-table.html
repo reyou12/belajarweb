@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form dasar html</title>
+  </head>
+  <body>
+    <main>
+            <h2>Form dasar html</h2>
+
+      <table border="1">
+        <form action="post">
+        <tr>
+          <td><label for="nama">Nama:</label>
+</td>
+          <td><input type="text" id="nama" name="nama" autocomplete="off" required autofocus /> <br>
+</td>
+        </tr>
+        <tr>
+          <td><label for="password">Password:</label>
+</td>
+          <td><input type="password" id="password" name="password" required /> <br>
+</td>
+        </tr>
+        <tr>
+          <td><label for="email">Email:</label>
+</td>
+          <td><input type="email" id="email" name="email" required /> <br>
+</td>
+        </tr>
+        <tr>
+          <td><label for="angka">angka</label>
+</td>
+          <td><input type="number" name="angka" id="angka" max="1000" min="0"> <br>
+</td>
+        </tr>
+        <tr>
+        <label for="jenis kelamin">jenis kelamin :</label>
+        </tr>
+        <tr>
+      <input type="radio" name="jenis kelamin" id="laki-laki" value="Laki-laki" checked>
+      <label for="laki-laki">Laki-laki</label> 
+      <input type="radio" name="jenis kelamin" id="perempuan" value="Perempuan">
+      <label for="perempuan">perempuan</label> <br>
+        </tr>
+        </form>
+      </table>
+      <form method=""post">
+       
+        
+      <h5>Hobi:</h5>
+      <input type="checkbox" name="Hobi1" id="hobi1" value="main bola">
+      <label for="hobi1">main bola</label>
+      <input type="checkbox" name="hobi2" id="hobi2" value="bulutangkis">
+      <label for="hobi2">bulutangkis</label>
+      <input type="checkbox" name="hobi3" id="hobi3" value="berenang">
+      <label for="hobi3">berenang</label><br>
+
+              <button type="submit">kirim</button>
+        <button type="reset">reset</button>
+      </form>
+    </main>
+  </body>
+</html>
