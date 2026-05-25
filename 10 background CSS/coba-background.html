@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>coba background css</title>
+    <style>
+      body {
+        background-color: #e0e0e0;
+        background-image: url("../08 Studi kasus HTML 1/assets/images/01.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      #kotak1 {
+        width: 300px;
+        height: 300px;
+        background-color: #f0f0f0;
+        background-image: url("../08 Studi kasus HTML 1/assets/images/02.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      #kotak2 {
+        width: 300px;
+        height: 300px;
+        background-image: linear-gradient(to right, #ff0000, #00ff00);
+      }
+      #kotak3 {
+        width: 300px;
+        height: 300px;
+        background-image: radial-gradient(circle, #0000ff, #00ffff);
+      }
+      #kotak4 {
+        width: 300px;
+        height: 300px;
+        background-image: repeating-linear-gradient(
+          45deg,
+          #ff00ff,
+          #ff00ff 10px,
+          #00ffff 10px,
+          #00ffff 20px
+        );
+      }
+      #kotak5 {
+        width: 300px;
+        height: 300px;
+        background-image:
+          url("../08 Studi kasus HTML 1/assets/images/03.png"),
+          linear-gradient(to bottom, #ff0000, #00ff00);
+        background-blend-mode: multiply;
+      }
+      #kotak6 {
+        width: 300px;
+        height: 300px;
+        background-image: conic-gradient(from 0deg, #ff0000, #00ff00, #0000ff);
+        background-blend-mode: screen;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="kotak1"></div>
+    <div id="kotak2"></div>
+    <div id="kotak3"></div>
+    <div id="kotak4"></div>
+    <div id="kotak5"></div>
+    <div id="kotak6"></div>
+  </body>
+</html>
