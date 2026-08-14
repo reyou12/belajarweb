@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CSS Simple Selectors</title>
+    <style>
+      /* Universal selector */
+      * {
+        font-family: Arial, sans-serif;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      /* Type selector */
+      h3 {
+        color: #053668;
+        margin-top: 15px;
+        margin-bottom: 5px;
+      }
+
+      /* Class selector */
+      .highlight {
+        background-color: yellow;
+        padding: 2px 5px;
+        font-weight: bold;
+        display: inline-block;
+      }
+
+      /* ID selector */
+      #heading {
+        color: #d9534f;
+        text-align: center;
+        margin-bottom: 20px;
+        background-color: #f2dede;
+        padding: 10px;
+      }
+
+      /* grouping selector */
+      i,
+      span {
+        color: #0c8877;
+        background-color: #d9edf7;
+        padding: 3px 6px;
+        border-radius: 3px;
+      }
+
+      /* attribute selector */
+      input[type="text"] {
+        border: 2px solid #5bc0de;
+        padding: 5px;
+        outline: none;
+        border-radius: 4px;
+      }
+
+      input[type="text"]:focus {
+        border-color: #053668;
+      }
+
+      a[href] {
+        color: #066e06;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a[href]:hover {
+        text-decoration: underline;
+      }
+
+      form {
+        padding-top: 12px;
+      }
+
+      .form-group {
+        margin-bottom: 12px;
+      }
+
+      label {
+        display: inline-block;
+        margin-bottom: 5px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1 id="heading">Belajar Simple Selectors</h1>
+
+    <h3>Judul Artikel 1</h3>
+    <p>Paragraf biasa tanpa class.</p>
+
+    <h3>Judul Artikel 2</h3>
+    <p class="highlight">
+      Paragraf ini diberi tanda stabilo menggunakan Class .highlight
+    </p>
+    <span class="highlight">Span ini juga pakai class .highlight</span>
+
+    <hr style="margin: 20px 0;" />
+
+    <form>
+      <div class="form-group">
+        <label for="nama">Nama (Input Teks):</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan Nama" />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" />
+      </div>
+    </form>
+
+    <br />
+
+    <p style="line-height: 1.6;">
+      <i>Ini elemen miring</i> dan <span>ini elemen span</span>. Lorem ipsum
+      dolor sit amet consectetur, adipisicing elit. Consectetur, incidunt?
+    </p>
+
+    <br />
+
+    <a href="https://wpucourse.id">WPUCourse.id</a>
+  </body>
+</html>
